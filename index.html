@@ -44,7 +44,7 @@
             </div>
             <div class="hero-unit">
                 <h1><span class="hl">$1</span> for <span class="hl">1%</span></h1>
-                <h2>The early-stage VC fund, reimagined to connect you to the most exclusive parts of Silicon Valley.</h2>
+                <h2>The early-stage VC pseudo-fund, reimagined to connect you to the most exclusive parts of Silicon Valley.</h2>
                 <a class="btn btn-info">View Perks <i class="icon-info-sign"></i></a> <a class="btn btn-primary">Apply <i class="icon-play-sign"></i></a>
             </div>
         </div>
@@ -57,44 +57,51 @@
                     <a id="anchor-perks"><i class="icon-thumbs-up pull-right"></i> Perks</a>
                 </div>
             </h2>
-            <div class="container" data-bind="foreach: Object.keys(Perks)">
-                <h3 class="perk-section-header" data-bind="text: $data"></h3>
-                <ul data-bind="foreach: Perks[$data]">
-                    <li>
-                        <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $parentContext.$index() + '_' + $index() }" data-toggle="modal"></a>
-                        <div data-bind="attr: { id: 'perk-modal-' + $parentContext.$index() + '_' + $index() }" class="modal hide">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h3 data-bind="text: $data.title"></h3>
-                            </div>
-                            <div class="modal-body">
-                                <p data-bind="html: $data.content"></p>
-                                <ul data-bind="foreach: $data.perks">
-                                    <li>
-                                        <i data-bind="attr: { class: $data['icon'] ? 'icon-' + $data.icon : 'icon-circle' }"></i>
-                                        <span data-bind="text: $data['text'] ? $data.text : $data"></span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer">
-                                <span class="pull-right">
-                                    <!-- ko if: $data.link -->
-                                        <a class="btn btn-info" data-bind="attr: { href: $data.link }">
-                                            Learn More <i class="icon-info-sign"></i>
-                                        </a>
-                                    <!-- /ko -->
-                                    <a class="btn btn-primary">Apply Now <i class="icon-play-sign"></i></a>
-                                </span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row" data-bind="foreach: Object.keys(Perks)">
+                    <div class="span4">
+                        <h3 class="perk-section-header" data-bind="text: $data"></h3>
+                        <ul class="perk-list" data-bind="foreach: Perks[$data]">
+                            <li>
+                                <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $parentContext.$index() + '_' + $index() }" data-toggle="modal"></a>
+                                <div data-bind="attr: { id: 'perk-modal-' + $parentContext.$index() + '_' + $index() }" class="modal hide">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h3 data-bind="text: $data.title"></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p data-bind="html: $data.content"></p>
+                                        <ul data-bind="foreach: $data.perks">
+                                            <li>
+                                                <i data-bind="attr: { class: $data['icon'] ? 'icon-' + $data.icon : 'icon-circle' }"></i>
+                                                <span data-bind="text: $data['text'] ? $data.text : $data"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <span class="pull-right">
+                                            <!-- ko if: $data.link -->
+                                                <a class="btn btn-info" data-bind="attr: { href: $data.link }">
+                                                    Learn More <i class="icon-info-sign"></i>
+                                                </a>
+                                            <!-- /ko -->
+                                            <a class="btn btn-primary">Apply Now <i class="icon-play-sign"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="section-apply" class="section">
              <!-- TODO: Add Application Form -->
         </div>
         <!-- Photo Cred: David Baron http://www.flickr.com/photos/dbaron/6758030249 -->
+        <div id="section-footer" class="container">
+            Copyright &copy; 2013 DollarVC LLC.
+        </div>
     </body>
     <script type="text/javascript" src="src/js/lib/jquery.js"></script>
     <script type="text/javascript" src="src/js/lib/bootstrap.js"></script>

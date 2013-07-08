@@ -12,6 +12,17 @@ var Content =
             }, 'perk', 'perk']
         },
         {
+            title: 'Sandbox Industries',
+            content: 'Sandbox Industries create, invest in and explore new businesses. They search for ideas with the potential to change markets, leveraging our expertise, resources, and experience to grow successful companies through collaboration and knowledge sharing. Sandbox represents a new model of business development -- one that helps rather than harasses entrepreneurs -- and is redefining the way great ideas are generated and transformed into successful companies.',
+            link: 'http://www.sandboxindustries.com',
+            perks: []
+        },
+        {
+            title: 'Apprentice UK Network',
+            content: 'Hommie this is a TV show.',
+            perks: []
+        },
+        {
             title: 'Linkless Test',
             content: 'Test.',
             perks: []
@@ -21,14 +32,14 @@ var Content =
             title: 'Amazon Web Services (AWS)',
             link: 'http://www.aws.amazon.com',
             content: '',
-            perks: []
+            perks: ['$10,000 EC2 Credits', 'bca']
         }],
         'Venture Capital': [
         {
-            title: 'XSeedCapital',
+            title: 'XSeed Capital',
             link: 'http://www.xseedcap.com/',
-            content: '',
-            perks: []
+            content: 'Founded in 2006 as one of the pioneers of the new venture industry, XSeed Capital works with entrepreneurs to build differentiated technology startups that dramatically change markets. We are serial entrepreneurs who appreciate the dedication, passion, anxiety and sleepless nights it takes to build something valuable from scratch.<br/><br/> With $110 million under management, we make our initial investment commitments at the seed stage and continue to support our portfolio companies through multiple investment rounds. But we provide more than capital: We work hard to support our entrepreneurs.',
+            perks: ['Seed Stage', 'Capital Source', { icon: 'dollar', text: '$110 Million Fund' }]
         }]
     }
 }

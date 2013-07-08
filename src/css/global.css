@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,100);
-body,html{padding:0px;margin:0px;font-family:'Helvetica Neue',Helvetica,Arial;}
+body,html{padding:0px;margin:0px;font-family:'Helvetica Neue',Helvetica,Arial;background:#aaa;}
 span.hl{color:#46c934;}
 p{color:#3a3a3a;}
-#navigation a{margin-bottom:3px;color:#3a3a3a;padding:15px;border-radius:0px;background:none;font-size:20px;}
+#navigation a{margin-bottom:3px;color:#eee;padding:15px;border-radius:0px;background:none;font-size:20px;font-weight:100;}
 #navigation a.active,#navigation a:hover{color:#ffffff;}
 .hero-unit{padding:20px 0px 60px 0px;background:none;}.hero-unit h1{font-size:120px;font-weight:bold;color:#ffffff;}
 .hero-unit h2{color:#f2f2f2;font-weight:100;}
@@ -20,3 +20,5 @@ p{color:#3a3a3a;}
 .section-header{color:#fff;background:#111111;padding:.8em 0px;font-size:48px;}.section-header a{color:#fff;}
 .modal{border-radius:0px;}.modal .modal-footer{border-radius:0px;}
 .logo{color:#000;}
+.perk-list{list-style-type:none;margin:0px;padding:0px;}.perk-list li{margin:0px;padding:0px;}
+#section-footer{color:#fff;padding-top:10px;text-align:center;}
