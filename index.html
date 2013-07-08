@@ -35,7 +35,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1 class="logo span3">$1VC</h1>
+                <h1 class="logo span3">$VC</h1>
                 <ul id="navigation" class="nav nav-pills pull-right">
                     <li><a href="#section-about">About</a></li>
                     <li><a href="#section-perks">Perks</a></li>
@@ -47,10 +47,12 @@
                 <h2>The early-stage VC fund, reimagined to connect you to the most exclusive parts of Silicon Valley.</h2>
                 <a class="btn btn-info">View Perks <i class="icon-info-sign"></i></a> <a class="btn btn-primary">Apply <i class="icon-play-sign"></i></a>
             </div>
-            <div id="section-about" class="section">
-                <!-- TODO: Add About Section -->
-            </div>
-            <div id="section-perks" class="section" data-bind="foreach: Object.keys(Perks)">
+        </div>
+        <div id="section-about" class="section">
+            <!-- TODO: Add About Section -->
+        </div>
+        <div id="section-perks" class="section" data-bind="foreach: Object.keys(Perks)">
+            <div class="container">
                 <a class="perk" data-bind="text: $data, attr: { href: 'perk-modal-' + $data }" data-toggle="modal"></a>
                 <div data-bind="attr: { id: 'perk-modal-' + $data }" class="modal hide">
                     <div class="modal-header"><h2 data-bind="text: Perks[$data].title"></h2></div>
@@ -75,9 +77,9 @@
                     </div>
                 </div>
             </div>
-            <div id="section-apply">
-                 <!-- TODO: Add Application Form -->
-            </div>
+        </div>
+        <div id="section-apply">
+             <!-- TODO: Add Application Form -->
         </div>
     </body>
     <script type="text/javascript" src="src/js/lib/jquery.js"></script>

@@ -1,11 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,100);
 @textNormal: #3a3a3a;
-@textPrimary: green;
+@textPrimary: #39B33D;
 @textSecondary: blue;
+
+@bgMain: #eee;
 
 body, html
 {
     padding: 0px;
     margin: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
 }
 span.hl
 {
@@ -15,11 +19,48 @@ p
 {
     color: @textNormal;
 }
-div#section-perks
+#navigation
+{
+    a
+    {
+        margin-bottom: 3px;
+        color: @textNormal;
+        padding: 15px;
+        border-radius: 0px;
+        background: none;
+        font-size: 20px;
+    }
+    a.active, a:hover
+    {
+        margin-bottom: 0px;
+        border-bottom: solid 3px @textPrimary;
+        color: @textPrimary;
+    }
+}
+.hero-unit
+{
+    padding: 60px 0px;
+    background: none;
+    h1
+    {
+        font-size: 120px;
+        font-weight: bold;
+    }
+    h2
+    {
+        color: lighten(@textNormal, 15%);
+    }
+}
+div.section#section-perks
 {
     a.perk
     {
         display: block;
         padding: 5px;
     }
+}
+div.section
+{
+    background: @bgMain;
+    padding: 20px 0px;
 }
