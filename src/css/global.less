@@ -1,9 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,100);
 @textNormal: #3a3a3a;
-@textPrimary: #39B33D;
+@textPrimary: #46C934;
 @textSecondary: blue;
 
+@textHeader: #fff;
+
 @bgMain: #eee;
+@bgSecondary: #FF8B17;
 
 body, html
 {
@@ -32,24 +35,39 @@ p
     }
     a.active, a:hover
     {
-        margin-bottom: 0px;
-        border-bottom: solid 3px @textPrimary;
-        color: @textPrimary;
+        color: @textHeader;
     }
 }
 .hero-unit
 {
-    padding: 60px 0px;
+    padding: 20px 0px 60px 0px;
     background: none;
     h1
     {
         font-size: 120px;
         font-weight: bold;
+        color: @textHeader;
     }
     h2
     {
-        color: lighten(@textNormal, 15%);
+        color: darken(@textHeader, 5%);
+        font-weight: 100;
     }
+    .btn
+    {
+        background-image: none;
+        font-size: 20px;
+        padding: .5em 1em;
+        margin-right: .5em;
+    }
+}
+.tron
+{
+    background: url(../img/header.png) center top no-repeat;
+}
+.nav-wrapper
+{
+    padding: 20px 0px;
 }
 .section#section-perks
 {
@@ -61,7 +79,17 @@ p
 {
     display: block;
     background: @bgMain;
-    padding: 20px 0px;
+}
+.section-header
+{
+    color: #fff;
+    background: @bgSecondary;
+    padding: .8em 0px;
+    font-size: 48px;
+    a
+    {
+        color: #fff;
+    }
 }
 .modal
 {

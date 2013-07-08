@@ -1,10 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,100);
 body,html{padding:0px;margin:0px;font-family:'Helvetica Neue',Helvetica,Arial;}
-span.hl{color:#39b33d;}
+span.hl{color:#46c934;}
 p{color:#3a3a3a;}
 #navigation a{margin-bottom:3px;color:#3a3a3a;padding:15px;border-radius:0px;background:none;font-size:20px;}
-#navigation a.active,#navigation a:hover{margin-bottom:0px;border-bottom:solid 3px #39b33d;color:#39b33d;}
-.hero-unit{padding:60px 0px;background:none;}.hero-unit h1{font-size:120px;font-weight:bold;}
-.hero-unit h2{color:#606060;}
-.section{display:block;background:#eeeeee;padding:20px 0px;}
+#navigation a.active,#navigation a:hover{color:#ffffff;}
+.hero-unit{padding:20px 0px 60px 0px;background:none;}.hero-unit h1{font-size:120px;font-weight:bold;color:#ffffff;}
+.hero-unit h2{color:#f2f2f2;font-weight:100;}
+.hero-unit .btn{background-image:none;font-size:20px;padding:.5em 1em;margin-right:.5em;}
+.tron{background:url(../img/header.png) center top no-repeat;}
+.nav-wrapper{padding:20px 0px;}
+.section{display:block;background:#eeeeee;}
+.section-header{color:#fff;background:#ff8b17;padding:.8em 0px;font-size:48px;}.section-header a{color:#fff;}
 .modal{border-radius:0px;}
