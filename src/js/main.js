@@ -1,6 +1,6 @@
-var Content
+var Content =
 {
-    Perks: [
+    Perks: {
         'Networks': [
         {
             title: 'Thiel Fellowship',
@@ -11,7 +11,7 @@ var Content
                 text: 'I know the founder of bitbucket'
             }, 'perk', 'perk']
         }],
-        'Discounts & Deals': [ //partnerships?
+        'Discounts & Deals': [ //partnerships? 
         {
             title: '',
             link: '',
@@ -25,6 +25,9 @@ var Content
             content: '',
             perks: []
         }]
-    ]
+    }
 }
+
+var Perks = Content.Perks;
+
 ko.applyBindings(Content);
