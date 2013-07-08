@@ -6,4 +6,4 @@ p{color:#3a3a3a;}
 #navigation a.active,#navigation a:hover{margin-bottom:0px;border-bottom:solid 3px #39b33d;color:#39b33d;}
 .hero-unit{padding:60px 0px;background:none;}.hero-unit h1{font-size:120px;font-weight:bold;}
 .hero-unit h2{color:#606060;}
-div.section{background:#eeeeee;padding:20px 0px;}
+.section{display:block;background:#eeeeee;padding:20px 0px;}

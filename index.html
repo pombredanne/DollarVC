@@ -56,8 +56,8 @@
                 <h2 data-bind="text: $data"></h2>
                 <ul data-bind="foreach: Perks[$data]">
                     <li>
-                        <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $data.title }" data-toggle="modal"></a>
-                        <div data-bind="attr: { id: 'perk-modal-' + $data.title }" class="modal hide">
+                        <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $index() }" data-toggle="modal"></a>
+                        <div data-bind="attr: { id: 'perk-modal-' + $index() }" class="modal hide">
                             <div class="modal-header"><h2 data-bind="text: $data.title"></h2></div>
                             <div class="modal-body">
                                 <p data-bind="html: $data.content"></p>
