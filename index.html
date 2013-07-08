@@ -51,31 +51,36 @@
         <div id="section-about" class="section">
             <!-- TODO: Add About Section -->
         </div>
-        <div id="section-perks" class="section" data-bind="foreach: Object.keys(Perks)">
-            <div class="container">
-                <a class="perk" data-bind="text: $data, attr: { href: 'perk-modal-' + $data }" data-toggle="modal"></a>
-                <div data-bind="attr: { id: 'perk-modal-' + $data }" class="modal hide">
-                    <div class="modal-header"><h2 data-bind="text: Perks[$data].title"></h2></div>
-                    <div class="modal-body">
-                        <p data-bind="html: Perks[$data].content"></p>
-                        <ul data-bind="foreach: Perks[$data].perks">
-                            <li>
-                                <i data-bind="attr: { class: 'icon' in $data ? 'icon-' + $data.icon : 'icon-circle' }"></i>
-                                <span data-bind="text: 'text' in $data ? $data.text : $data"></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <span class="pull-right">
-                            <!-- ko: if 'link' in Perks[$data] -->
-                                <a class="btn btn-info" data-bind="attr: { src: Perks[$data].link }">
-                                    Learn More <i class="icon-info-sign"></i>
-                                </a>
-                            <!-- /ko -->
-                            <a class="btn btn-primary">Apply Now <i class="icon-play-sign"></i></a>
-                        </span>
-                    </div>
-                </div>
+        <div id="section-perks" class="section">
+            <div class="container" data-bind="foreach: Object.keys(Perks)">
+                <h2 data-bind="text: $data"></h2>
+                <ul data-bind="foreach: Perks[$data]">
+                    <li>
+                        <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $data.title }" data-toggle="modal"></a>
+                        <div data-bind="attr: { id: 'perk-modal-' + $data.title }" class="modal hide">
+                            <div class="modal-header"><h2 data-bind="text: $data.title"></h2></div>
+                            <div class="modal-body">
+                                <p data-bind="html: $data.content"></p>
+                                <ul data-bind="foreach: $data.perks">
+                                    <li>
+                                        <i data-bind="attr: { class: $data['icon'] ? 'icon-' + $data.icon : 'icon-circle' }"></i>
+                                        <span data-bind="text: $data['text'] ? $data.text : $data"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <span class="pull-right">
+                                    <!-- ko: if 'link' in Perks[$data] -->
+                                        <a class="btn btn-info" data-bind="attr: { src: $data.link }">
+                                            Learn More <i class="icon-info-sign"></i>
+                                        </a>
+                                    <!-- /ko -->
+                                    <a class="btn btn-primary">Apply Now <i class="icon-play-sign"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="section-apply">
