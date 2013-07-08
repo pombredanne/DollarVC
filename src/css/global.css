@@ -1,3 +1,4 @@
 body,html{padding:0px;margin:0px;}
 span.hl{color:#008000;}
 p{color:#3a3a3a;}
+div#section-perks a.perk{display:block;padding:5px;}
