@@ -6,12 +6,17 @@ p{color:#3a3a3a;}
 #navigation a.active,#navigation a:hover{color:#ffffff;}
 .hero-unit{padding:20px 0px 60px 0px;background:none;}.hero-unit h1{font-size:120px;font-weight:bold;color:#ffffff;}
 .hero-unit h2{color:#f2f2f2;font-weight:100;}
-.hero-unit .btn{background-image:none;font-size:20px;padding:.5em 1em;margin-right:.5em;}
-.hero-unit .btn.btn-primary{background:#ff8b17;}
-.hero-unit .btn.btn-info{background:#46c934;}
+.hero-unit .btn{font-size:20px;padding:.5em 1em;margin-right:.5em;}
+.btn{background-image:none !important;}
+.btn.btn-primary{background:#ff8b17;}
+.btn.btn-primary:hover{background:#ff9831;}
+.btn.btn-primary:active{background:#e37100;}
+.btn.btn-info{background:#46c934;}
+.btn.btn-info:hover{background:#58cf47;}
+.btn.btn-info:active{background:#38a02a;}
 .tron{background:url(../img/header.png) center top no-repeat;}
 .nav-wrapper{padding:20px 0px;}
 .section{display:block;background:#eeeeee;}
 .section-header{color:#fff;background:#111111;padding:.8em 0px;font-size:48px;}.section-header a{color:#fff;}
-.modal{border-radius:0px;}
+.modal{border-radius:0px;}.modal .modal-footer{border-radius:0px;}
 .logo{color:#000;}

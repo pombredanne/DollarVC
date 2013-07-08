@@ -57,19 +57,38 @@ p
     }
     .btn
     {
-        background-image: none;
         font-size: 20px;
         padding: .5em 1em;
         margin-right: .5em;
     }
-    .btn.btn-primary
-    {
-        background: @bgSecondary;
-    }
-    .btn.btn-info
-    {
-        background: @bgPrimary;
-    }
+}
+.btn
+{
+    background-image: none !important;
+}
+.btn.btn-primary
+{
+    background: @bgSecondary;
+}
+.btn.btn-primary:hover
+{
+    background: lighten(@bgSecondary, 5%);
+}
+.btn.btn-primary:active
+{
+    background: darken(@bgSecondary, 10%);
+}
+.btn.btn-info
+{
+    background: @bgPrimary;
+}
+.btn.btn-info:hover
+{
+    background: lighten(@bgPrimary, 5%);
+}
+.btn.btn-info:active
+{
+    background: darken(@bgPrimary, 10%);
 }
 .tron
 {
@@ -104,6 +123,10 @@ p
 .modal
 {
     border-radius: 0px;
+    .modal-footer
+    {
+        border-radius: 0px;
+    }
 }
 .logo
 {
