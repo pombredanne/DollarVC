@@ -105,12 +105,26 @@
             </h2>
              <!-- TODO: Add Network Details, mailing list info, etc. -->
         </div>
-        <div id="section-apply" class="section">
+        <div id="section-apply" class="section section-green">
              <!-- TODO: Add Application Form -->
+             <h2 class="section-header">
+                <div class="container">
+                    <a id="apply"><i class="icon-pencil pull-right"></i> Apply</a>
+                </div>
+            </h2>
+            <div class="container">
+                <h3>Application FAQ</h3>
+                <ul data-bind="foreach: FAQ">
+                    <li><b data-bind="text: $data.q">What Does The P</b><p data-bind="html: $data.a"></p></li>
+                </ul>
+                <div class="center">
+                    <a class="btn btn-primary"><h3><i class="icon-double-angle-left"></i> Start the Application <i class="icon-double-angle-right"></i></h3></a>
+                </div>
+            </div>
         </div>
         <!-- Photo Cred: David Baron http://www.flickr.com/photos/dbaron/6758030249 -->
         <div id="section-footer">
-            Copyright &copy; 2013 DollarVC - Follow <a href="http://www.twitter.com/dollarvc">@dollarvc</a> on Twitter and <a href="http://www.facebook.com/DollarVC">Facebook</a>. - <a href="mailto:partner@dollarvc.com">Become a DollarVC Partner</a>.
+            Copyright &copy; 2013 DollarVC - Follow <a href="http://www.twitter.com/dollarvc">@dollarvc</a> on Twitter and <a href="http://www.facebook.com/DollarVC">Facebook</a>. - <a href="mailto:partner@dollarvc.com">Partner</a> with us or <a href="mailto:info@dollarvc.com">Contact</a>.
         </div>
     </body>
     <script type="text/javascript" src="src/js/lib/jquery.js"></script>

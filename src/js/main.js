@@ -73,7 +73,17 @@ var Content =
         {
             title: 'FoundersCard'
         }]
-    }
+    },
+    FAQ: [
+        {
+          q: 'What does the application process look like?',
+          a: 'Your application undergoes multiple rounds of review before it reaches the deal table.  If it passes to the board, we will review it again and get in touch with you possibly for a Skype call.'
+        },
+        {
+          q: 'What if I am approved?',
+          a: 'Once you are offered a deal, we will work out some paperwork and you will have full access to the DollarVC perks resources. Onboarding you with all of our perks and intros may take a few days.'
+        }
+    ]
 }
 
 // mailing lists - Question Pool, Usage -

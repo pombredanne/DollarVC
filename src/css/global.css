@@ -16,11 +16,13 @@ p{color:#3a3a3a;}
 .btn.btn-info:active{background:#38a02a;}
 .tron{background:url(../img/header.png) center top no-repeat;}
 .nav-wrapper{padding:20px 0px;}
-.section{display:block;background:#111111;}
+.section{display:block;background:#111111;padding-bottom:30px;}
 .section-bright,.section-bright .section-header{background:#ff8b17;}
+.section-green,.section-green .section-header{background:#46c934;}
 .section-header{color:#fff;background:#111111;padding:.8em 0px;font-size:48px;margin:0px;}.section-header a{color:#fff;}
 .modal{width:50%;margin-left:-25%;border-radius:0px;}.modal .modal-footer{border-radius:0px;}
 .logo{color:#3a3a3a;}
 .perk-list{list-style-type:none;margin:0px;padding:0px;}.perk-list li{margin:0px;padding:0px;}
 #section-perks{padding-bottom:30px;}
 #section-footer{color:rgba(255, 255, 255, 0.6);padding:10px;text-align:center;font-size:11px;background:#111111;}
+.center{text-align:center;}
