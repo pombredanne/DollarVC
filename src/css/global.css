@@ -20,7 +20,9 @@ p{color:#3a3a3a;}
 .section-bright,.section-bright .section-header{background:#ff8b17;}
 .section-green,.section-green .section-header{background:#46c934;}
 .section-header{color:#fff;background:#111111;padding:.8em 0px;font-size:48px;margin:0px;}.section-header a{color:#fff;}
-.modal{width:50%;margin-left:-25%;border-radius:0px;}.modal .modal-footer{border-radius:0px;}
+.modal{width:50%;margin-left:-25%;border-radius:0px;border:solid 5px #fff;}.modal .modal-header.cover{padding-bottom:0px;padding-left:0px;background:center center no-repeat #555555;}.modal .modal-header.cover h3{margin-top:80px;display:table;padding:10px;background:rgba(255, 255, 255, 0.6);border-top:none;}
+.modal .modal-footer{border-radius:0px;border-top:0px;}
+.modal .modal-logo{margin-left:15px;margin-bottom:15px;}
 .logo{color:#3a3a3a;}
 .perk-list{list-style-type:none;margin:0px;padding:0px;}.perk-list li{margin:0px;padding:0px;}
 #section-perks{padding-bottom:30px;}

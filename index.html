@@ -45,7 +45,7 @@
             </div>
             <div class="hero-unit">
                 <h1><span class="hl">$1</span> for <span class="hl">1%</span></h1>
-                <h2>The early-stage pseudo-fund, reimagined to connect you to the most exclusive parts of Silicon Valley.</h2>
+                <h2>The early-stage VC pseudo-fund, reimagined to connect you to the most exclusive parts of Silicon Valley.</h2>
                 <a href="#perks" class="btn btn-info">View Perks <i class="icon-info-sign"></i></a> <a href="#apply" class="btn btn-primary">Apply <i class="icon-play-sign"></i></a>
             </div>
         </div>
@@ -66,11 +66,12 @@
                             <li>
                                 <a class="perk" data-bind="text: $data.title, attr: { href: '#perk-modal-' + $parentContext.$index() + '_' + $index() }" data-toggle="modal"></a>
                                 <div data-bind="attr: { id: 'perk-modal-' + $parentContext.$index() + '_' + $index() }" class="modal hide">
-                                    <div class="modal-header">
+                                    <div class="modal-header" data-bind="css: { 'cover' : $data['cover'] }, style: { 'background-image' : 'url(' + $data['cover'] + ')' }">
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                         <h3 data-bind="text: $data.title"></h3>
                                     </div>
                                     <div class="modal-body">
+                                        <img class="pull-right modal-logo" width="100" data-bind="attr: { src: $data.logo }" />
                                         <p data-bind="html: $data.content"></p>
                                         <ul data-bind="foreach: $data.perks">
                                             <li>
@@ -97,14 +98,6 @@
             </div>
             <br/>
         </div>
-        <div id="section-network" class="section section-bright">
-            <h2 class="section-header">
-                <div class="container">
-                    <a id="network"><i class="icon-globe pull-right"></i> Network</a>
-                </div>
-            </h2>
-             <!-- TODO: Add Network Details, mailing list info, etc. -->
-        </div>
         <div id="section-apply" class="section section-green">
              <!-- TODO: Add Application Form -->
              <h2 class="section-header">
@@ -122,6 +115,15 @@
                 </div>
             </div>
         </div>
+        <div id="section-network" class="section section-bright">
+            <h2 class="section-header">
+                <div class="container">
+                    <a id="network"><i class="icon-globe pull-right"></i> Network</a>
+                </div>
+            </h2>
+             <!-- TODO: Add Network Details, mailing list info, etc. -->
+        </div>
+        
         <!-- Photo Cred: David Baron http://www.flickr.com/photos/dbaron/6758030249 -->
         <div id="section-footer">
             Copyright &copy; 2013 DollarVC - Follow <a href="http://www.twitter.com/dollarvc">@dollarvc</a> on Twitter and <a href="http://www.facebook.com/DollarVC">Facebook</a>. - <a href="mailto:partner@dollarvc.com">Partner</a> with us or <a href="mailto:info@dollarvc.com">Contact</a>.

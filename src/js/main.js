@@ -15,7 +15,9 @@ var Content =
             title: 'Sandbox Industries',
             content: 'Sandbox Industries create, invest in and explore new businesses. They search for ideas with the potential to change markets, leveraging our expertise, resources, and experience to grow successful companies through collaboration and knowledge sharing. Sandbox represents a new model of business development -- one that helps rather than harasses entrepreneurs -- and is redefining the way great ideas are generated and transformed into successful companies.',
             link: 'http://www.sandboxindustries.com',
-            perks: []
+            perks: ['Venture Capital'],
+            cover: 'https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc1/417030_10150702185045991_1163777163_n.jpg',
+            logo: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/s160x160/422622_10150702183955991_2015636379_a.jpg'
         },
         {
             title: 'Apprentice UK Network',
@@ -55,7 +57,9 @@ var Content =
             title: 'XSeed Capital',
             link: 'http://www.xseedcap.com/',
             content: 'Founded in 2006 as one of the pioneers of the new venture industry, XSeed Capital works with entrepreneurs to build differentiated technology startups that dramatically change markets. We are serial entrepreneurs who appreciate the dedication, passion, anxiety and sleepless nights it takes to build something valuable from scratch.<br/><br/> With $110 million under management, we make our initial investment commitments at the seed stage and continue to support our portfolio companies through multiple investment rounds. But we provide more than capital: We work hard to support our entrepreneurs.',
-            perks: ['Seed Stage', 'Capital Source', { icon: 'dollar', text: '$110 Million Fund' }]
+            perks: ['Seed Stage', 'Capital Source', { icon: 'dollar', text: '$110 Million Fund' }],
+            cover: 'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/75031_517059831660811_1563990477_n.jpg',
+            logo: 'http://www.xseedcap.com/wp-content/themes/xseed/img/logo-xseedcap.png'
         }],
         'Legal Probono': [
         {
