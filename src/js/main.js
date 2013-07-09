@@ -1,7 +1,7 @@
 var Content =
 {
     Perks: {
-        'Networks': [
+        'Network & Outreach': [
         {
             title: 'Thiel Fellowship',
             link: 'http://www.thielfellowship.org',
@@ -27,9 +27,25 @@ var Content =
             content: 'Test.',
             perks: []
         }],
-        'Discounts & Deals': [ //partnerships? 
+        'Advisory & Domain': [
+        {
+            title: ''
+        }],
+        'Founder Deals': [ //discounts and deals?
         {
             title: 'Amazon Web Services (AWS)',
+            link: 'http://www.aws.amazon.com',
+            content: '',
+            perks: ['$10,000 EC2 Credits', 'bca']
+        },
+        {
+            title: 'Sendgrid',
+            link: 'http://www.aws.amazon.com',
+            content: '',
+            perks: ['$10,000 EC2 Credits', 'bca']
+        },
+        {
+            title: 'Twillio',
             link: 'http://www.aws.amazon.com',
             content: '',
             perks: ['$10,000 EC2 Credits', 'bca']
@@ -40,9 +56,30 @@ var Content =
             link: 'http://www.xseedcap.com/',
             content: 'Founded in 2006 as one of the pioneers of the new venture industry, XSeed Capital works with entrepreneurs to build differentiated technology startups that dramatically change markets. We are serial entrepreneurs who appreciate the dedication, passion, anxiety and sleepless nights it takes to build something valuable from scratch.<br/><br/> With $110 million under management, we make our initial investment commitments at the seed stage and continue to support our portfolio companies through multiple investment rounds. But we provide more than capital: We work hard to support our entrepreneurs.',
             perks: ['Seed Stage', 'Capital Source', { icon: 'dollar', text: '$110 Million Fund' }]
+        }],
+        'Legal Probono': [
+        {
+            title: ''
+        }],
+        'Events & Hackathons': [
+        {
+            title: ''
+        }],
+        'Lifestyle': [
+        {
+            title: 'Streem.io'
+        }],
+        'Memberships': [
+        {
+            title: 'FoundersCard'
         }]
     }
 }
+
+// mailing lists - Question Pool, Usage -
+// Topic: Industry
+// Question
+// 
 
 var Perks = Content.Perks;
 
