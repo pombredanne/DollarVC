@@ -109,7 +109,11 @@ p
 .section
 {
     display: block;
-    background: @bgMain;
+    background: @bgDark;
+}
+.section-bright, .section-bright .section-header
+{
+    background: @bgSecondary;
 }
 .section-header
 {
@@ -117,6 +121,7 @@ p
     background: @bgDark;
     padding: .8em 0px;
     font-size: 48px;
+    margin: 0px;
     a
     {
         color: #fff;
