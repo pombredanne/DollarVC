@@ -18,7 +18,7 @@ p{color:#3a3a3a;}
 .nav-wrapper{padding:20px 0px;}
 .section{display:block;background:#eeeeee;}
 .section-header{color:#fff;background:#111111;padding:.8em 0px;font-size:48px;}.section-header a{color:#fff;}
-.modal{border-radius:0px;}.modal .modal-footer{border-radius:0px;}
+.modal{width:50%;margin-left:-25%;border-radius:0px;}.modal .modal-footer{border-radius:0px;}
 .logo{color:#000;}
 .perk-list{list-style-type:none;margin:0px;padding:0px;}.perk-list li{margin:0px;padding:0px;}
 #section-footer{color:#fff;padding-top:10px;text-align:center;}
